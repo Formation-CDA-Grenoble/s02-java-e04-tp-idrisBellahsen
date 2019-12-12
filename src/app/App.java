@@ -67,22 +67,22 @@ public class App {
         * =====================================================================
         * Décommente le code ci-dessous lorsque tu atteins cette partie
         */
-        // mario = createCharacter();
-        // test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), false);
-        // System.out.println("Mario ramasse une étoile...");
-        // mario.pickUpStar();
-        // test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), true);
-        // System.out.println("Mario prend un coup...");
-        // mario.takeHit();
-        // test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), true);
-        // test("mario.getLives()", mario.getLives(), 3);
-        // System.out.println("L'effet de l'étoile se dissipe...");
-        // mario.invulnerableWearsOff();
-        // test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), false);
-        // System.out.println("Mario prend un coup...");
-        // mario.takeHit();
-        // test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), false);
-        // test("mario.getLives()", mario.getLives(), 2);
+        mario = createCharacter();
+        test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), false);
+        System.out.println("Mario ramasse une étoile...");
+        mario.pickUpStar();
+        test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), true);
+        System.out.println("Mario prend un coup...");
+        mario.takeHit();
+        test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), true);
+        test("mario.getLives()", mario.getLives(), 3);
+        System.out.println("L'effet de l'étoile se dissipe...");
+        mario.invulnerableWearsOff();
+        test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), false);
+        System.out.println("Mario prend un coup...");
+        mario.takeHit();
+        test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), false);
+        test("mario.getLives()", mario.getLives(), 2);
     }
 
     private static boolean isEqual (Object  number1, Object number2){

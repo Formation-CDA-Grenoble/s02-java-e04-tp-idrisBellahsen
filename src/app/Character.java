@@ -6,6 +6,8 @@ class Character {
     
     private int lives;
     private boolean isBig;
+    private boolean isInvulnerable; 
+    private int score;
 
     Character(){
       //lives=3;
@@ -61,13 +63,48 @@ class Character {
     }
 
     public void takeHit(){
-
-        if(getIsBig()){
-            isBig=false;
-        }else{
-            loseLife();
+        if(isInvulnerable==false){
+            if(getIsBig()){
+                isBig=false;
+            }else{
+                loseLife();
+            }
         }
     }
+
+    public void pickUpStar(){
+        isInvulnerable=true;
+
+    }
+
+    public void invulnerableWearsOff(){
+
+        isInvulnerable=false;
+    }
+
+    /**
+     * @return the isInvulnerable
+     */
+    public boolean getIsInvulnerable() {
+        return isInvulnerable;
+    }
+
+    public void pickUpCoin(){
+        score+=200;
+    }
+
+
+    /**
+     * @return the score
+     */
+    public int getScore() {
+        return score;
+    }
+
+    public void killGoomba(){
+        score+=100;
+    }
+
 
 
 }
