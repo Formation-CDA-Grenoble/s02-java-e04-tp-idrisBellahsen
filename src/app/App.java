@@ -90,4 +90,10 @@ public class App {
         return number1 == number2;
 
     }
+
+    private static Character createCharacter(){
+     
+        System.out.println("Créons Mario avec 3 vies...");
+        return new Character();
+    }
 }
