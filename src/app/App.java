@@ -85,7 +85,7 @@ public class App {
         // test("mario.getLives()", mario.getLives(), 2);
     }
 
-    private static boolean isEqual (int  number1, int number2){
+    private static boolean isEqual (Object  number1, Object number2){
         
         return number1 == number2;
 
@@ -95,5 +95,15 @@ public class App {
      
         System.out.println("Créons Mario avec 3 vies...");
         return new Character();
+    }
+
+    private static void test(String call, Object actualValue, Object expectedValue) {
+        String message = "L'appel  " + call + "  renvoie: " + String.valueOf(actualValue) + ". (valeur attendue: " + expectedValue + ")  ";
+        if (isEqual(actualValue, expectedValue)) {
+            message += "C'est bon! ☑️";
+        } else {
+            message += "Encore un coup des Illuminati... ❔";
+        }
+        System.out.println(message);
     }
 }
