@@ -11,7 +11,7 @@ public class App {
         * =====================================================================
         * Décommente le code ci-dessous lorsque tu atteins cette partie
         */
-        // mario = createCharacter();
+        mario = createCharacter();
         // test("mario.getLives()", mario.getLives(), 3);
 
 
@@ -94,7 +94,7 @@ public class App {
     private static Character createCharacter(){
      
         System.out.println("Créons Mario avec 3 vies...");
-        return new Character();
+        return new Character(3);
     }
 
     private static void test(String call, Object actualValue, Object expectedValue) {
